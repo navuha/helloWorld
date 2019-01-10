@@ -1,0 +1,151 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+    http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.condar.tie</groupId>
+  <artifactId>theSing</artifactId>
+  <packaging>war</packaging>
+  <name>theSing</name>
+  <version>1.0</version>
+  <!--url>http://maven.apache.org</url!-->
+  <!--url>http://central.maven.org/maven2/</url!-->
+
+  <repositories>
+
+    <repository>
+      <id>Central</id>
+      <name>Of my choose</name>
+      <url>http://central.maven.org/maven2/</url>
+      <layout>default</layout>
+    </repository>
+
+    <repository>
+      <id>codelds</id>
+      <name>Next of my choose</name>
+      <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+    </repository>
+
+  </repositories>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.oracle</groupId>
+      <artifactId>ojdbc6</artifactId>
+      <version>11.2.0.3</version>
+    </dependency>
+
+    <!--dependency>
+      <groupId>com.condar.tie.part</groupId>
+      <artifactId>theSEPartOfSing</artifactId>
+      <version>1.0</version>
+    </dependency!-->
+
+    <!--dependency>
+      <groupId>javax.faces</groupId>
+      <artifactId>javax.faces-api</artifactId>
+      <version>2.0</version>
+      <scope>provided</scope>
+    </dependency!-->
+    <dependency>
+      <groupId>com.sun.faces</groupId>
+      <artifactId>jsf-api</artifactId>
+      <version>2.0.7</version>
+    </dependency>
+
+    <!--dependency>
+      <groupId>javax.faces</groupId>
+      <artifactId>jsf-impl</artifactId>
+      <version>1.2_15</version>
+      <scope>provided</scope>
+    </dependency!-->
+    <dependency>
+      <groupId>com.sun.faces</groupId>
+      <artifactId>jsf-impl</artifactId>
+      <version>2.0.7</version>
+    </dependency>
+
+    <!--is in the api(!not this,with name)...-->
+    <!--it is not been provide in JSF 2.0...on my need?-->
+    <!--off 2008-->
+    <!--dependency>
+      <groupId>javax.el</groupId>
+      <artifactId>el-api</artifactId>
+      <version>1.0</version>
+    </dependency!-->
+
+    <!--with no w.provided, they are. And they are been provide...-->
+    <!--dependency>
+      <groupId>jetty</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5-6.0.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jetty</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.1-6.0.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency!-->
+
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>theSing</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+
+</project>

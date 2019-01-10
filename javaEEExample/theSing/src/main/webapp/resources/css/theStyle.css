@@ -1,0 +1,72 @@
+/*two for center*/
+html
+{
+  height: 100%;
+  display: table;
+  margin: auto;
+
+}
+
+body
+{
+  /*height: 100%;*/
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.anyColourOffUnwork
+{
+  color: blue;
+}
+
+.anyPGBeenACenter
+{
+  text-align: center;
+}
+
+.anyNonSizechangable
+{
+  resize: none;
+}
+
+.anyMainFont
+{
+  font: oblique normal bold xx-large/1.5 "Agency FB", sans-serif;
+  color: #00f000;
+
+}
+
+.anyOtherFont
+{
+  font: oblique normal bold x-large/1.5 "Agency FB", sans-serif;
+  color: #00f000;
+
+}
+
+.anyBackground
+{
+  background: border-box black url("#{resource['image:theEyes.jpg']}")
+    border-box top/cover no-repeat fixed;
+
+}
+
+input
+{
+  /*color: rgba(0, 0, 0, 0);*/
+  color: #a0d0f0;
+  font: oblique normal bold xx-large/1.5 "Agency FB", sans-serif;
+  background-color: transparent;
+
+  border: thin solid;/* #a0d0f0;*/
+  padding-right: 3%;
+
+}
+
+textarea
+{
+  border-style: solid solid none none;
+  border-width: thin;
+  border-color: #a0d0f0;
+
+}
